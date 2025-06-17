@@ -10,33 +10,52 @@ Es un lenguaje de alto nivel, permite la manipulacion del DOM, es versátil porq
 1.3 Que JavaScript sea un lenguaje interpretado significa que no tiene que ser compilado, sino que es interpretado directamente por el navegador, que esté basado en eventos significa que es receptivo a las acciones del usuario para desencadenar una serie de eventos de forma interactiva, por ejemplo que muestre un mensaje al darle click a un botón.
 
 ##                                                  PARTE 2
-### 2.1 ```js
+### 2.1 
+```js
 let nombre = 'Santiago'
 console.log(`Hola, yo soy ${nombre}`)
+```
 
-2.2 let entero = 20;
+### 2.2 
+```js
+let entero = 20;
 let decimal = 20.20;
 let lastName = 'Villa';
 console.log(`El numero entero es ${entero}, el decimal es ${decimal} y el apellido es ${lastName}`)
+```
 
-2.3 Cada vez que se asigna un valor para la variable, este se sobreescribe y por lo tanto me toma el ultimo valor asignado
+### 2.3 
+Cada vez que se asigna un valor para la variable, este se sobreescribe y por lo tanto me toma el ultimo valor asignado
 
-2.4 El mensaje que se muestra es "undefined", como si no existiera
+### 2.4 
+El mensaje que se muestra es "undefined", como si no existiera
 
-2.5 La variable con valor null muestra en consola "null" y la que tiene valor booleano muestra dicho valor
+### 2.5 
+La variable con valor null muestra en consola "null" y la que tiene valor booleano muestra dicho valor
 
-                                                  PARTE 3
+##                                                  PARTE 3
 
-3.1 let age = prompt('Cual es tu edad?')  
+### 3.1 
+```js
+let age = prompt('Cual es tu edad?')  
 console.log(`Tienes ${age} años`)
+```
 
-3.2 alert('Welcome to the jungle!')
+### 3.2 
+```js
+alert('Welcome to the jungle!')
+```
 
-3.3 confirm('Deseas continuar?')
+### 3.3 
+```js
+confirm('Deseas continuar?')
+```
 
-                                                  PARTE 4
+##                                                  PARTE 4
 
-4.1 let num1 = 20
+### 4.1 
+```js
+let num1 = 20
 let num2 = 45
 
 let result = num1 + num2
@@ -53,21 +72,30 @@ console.log(result)
 
 result = num1 % num2
 console.log(result)
+```
 
-4.2 let string1 = 'Hola, bienvenido'
+### 4.2 
+```js
+let string1 = 'Hola, bienvenido'
 let string2 = '¿Cómo estás?'
 
 console.log(string1 + string2)
+```
 
-4.3 console.log(5 == "5")  //True
+### 4.3 
+```js
+console.log(5 == "5")  //True
 console.log(5 === "5")  //False
 console.log(true && false)  //False
 console.log(false || true)   //True
 console.log(!true)   //False
+```
 
-                                                  PARTE 5
+##                                                  PARTE 5
 
-5.1 let num = prompt('Ingresa un número')
+### 5.1 
+```js
+let num = prompt('Ingresa un número')
 
 if (num < 10) {
     console.log(`El número ingresado "${num}" es menor a 10`)
@@ -78,25 +106,32 @@ if (num < 10) {
 } else {
     console.log('Error, ingresa un número')
 }
+```
 
-5.2 let name = prompt('Please enter the name of the user')
+### 5.2 
+```js
+let name = prompt('Please enter the name of the user')
 
 if (name.toLowerCase() == 'admin') {
     alert('Bienvenido admin!')
 } else {
     alert('Bienvenido!')
 }
+```
 
-5.3 let num = prompt('Please enter a number')
+### 5.3 
+```js
+let num = prompt('Please enter a number')
 
 let isPair = num % 2 == 0 ? 'is pair' : 'is not pair'
 
 console.log(`The number ${num} ${isPair}`)
+```
 
+##                                                  PARTE 6
 
-                                                  PARTE 6
-
-6.1 
+## 6.1 
+```js
 console.info('This is an informative message')
 
 console.warn('This is a warning message')
@@ -122,9 +157,11 @@ for (let i = 0; i < 10000; i++) {
     num *= i
 }
 console.timeEnd('Bucle_time')
+```
 
-                                                  PARTE 7
+##                                                  PARTE 7
 
+```js
 /*This method quantifies the time it takes a specific block of code to be executed from the declaration of console.time until the console.timeEnd declaration */
 console.time('Bucle_time')
 let num = 20
@@ -132,3 +169,4 @@ for (let i = 0; i < 10000; i++) {
     num *= i
 }
 console.timeEnd('Bucle_time')
+```
