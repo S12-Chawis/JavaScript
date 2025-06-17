@@ -22,4 +22,112 @@ console.log(`El numero entero es ${entero}, el decimal es ${decimal} y el apelli
 
                                                   PARTE 3
 
-3.1 
+3.1 let age = prompt('Cual es tu edad?')  
+console.log(`Tienes ${age} años`)
+
+3.2 alert('Welcome to the jungle!')
+
+3.3 confirm('Deseas continuar?')
+
+                                                  PARTE 4
+
+4.1 let num1 = 20
+let num2 = 45
+
+let result = num1 + num2
+console.log(result)
+
+result = num1 - num2
+console.log(result)
+
+result = num1 * num2
+console.log(result)
+
+result = num1 / num2
+console.log(result)
+
+result = num1 % num2
+console.log(result)
+
+4.2 let string1 = 'Hola, bienvenido'
+let string2 = '¿Cómo estás?'
+
+console.log(string1 + string2)
+
+4.3 console.log(5 == "5")  //True
+console.log(5 === "5")  //False
+console.log(true && false)  //False
+console.log(false || true)   //True
+console.log(!true)   //False
+
+                                                  PARTE 5
+
+5.1 let num = prompt('Ingresa un número')
+
+if (num < 10) {
+    console.log(`El número ingresado "${num}" es menor a 10`)
+} else if (num == 10) {
+    console.log(`El número ingresado "${num}" es igual a 10`)
+} else if (num > 10) {
+    console.log(`El número ingresado "${num}" es mayor a 10`)
+} else {
+    console.log('Error, ingresa un número')
+}
+
+5.2 let name = prompt('Please enter the name of the user')
+
+if (name.toLowerCase() == 'admin') {
+    alert('Bienvenido admin!')
+} else {
+    alert('Bienvenido!')
+}
+
+5.3 let num = prompt('Please enter a number')
+
+let isPair = num % 2 == 0 ? 'is pair' : 'is not pair'
+
+console.log(`The number ${num} ${isPair}`)
+
+
+                                                  PARTE 6
+
+6.1 
+console.info('This is an informative message')
+
+console.warn('This is a warning message')
+
+console.error('This is an error message')
+
+console.group('User info')
+console.log('Name: Santiago')
+console.log('Last name: Villa')
+console.group('Contact info')
+console.log('Email address: santiagovillapanesso1@gmail.com')
+console.log('Phone number: 3193418511')
+console.groupEnd()
+console.group('Family info')
+console.log('Lives with: Mom, Dad, Cousin')
+console.log('Siblings: none')
+console.groupEnd()
+console.groupEnd()
+
+console.time('Bucle_time')
+let num = 20
+for (let i = 0; i < 10000; i++) {
+    num *= i
+}
+console.timeEnd('Bucle_time')
+
+                                                  PARTE 7
+
+/*This method quantifies the time it takes a specific block of code to be executed from the declaration of console.time until the console.timeEnd declaration */
+console.time('Bucle_time')
+let num = 20
+for (let i = 0; i < 10000; i++) {
+    num *= i
+}
+console.timeEnd('Bucle_time')
+
+                                                  PARTE 8
+
+8.1 
