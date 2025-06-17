@@ -1,15 +1,18 @@
 # JavaScript
 
 ##                                                  PARTE 1
+
 ### 1.1  
 JavaScript es un lenguaje de programación que permite darle funcionalidad e interactividad a las páginas web, permitiendo tanto efectos visuales mas potentes, como funcionalidades por parte del servidor como por ejemplo enviar información a bases de datos o consumir APIs.
 
-1.2 
+### 1.2 
 Es un lenguaje de alto nivel, permite la manipulacion del DOM, es versátil porque permite funcionalidades tanto de back, como front.
 
-1.3 Que JavaScript sea un lenguaje interpretado significa que no tiene que ser compilado, sino que es interpretado directamente por el navegador, que esté basado en eventos significa que es receptivo a las acciones del usuario para desencadenar una serie de eventos de forma interactiva, por ejemplo que muestre un mensaje al darle click a un botón.
+### 1.3 
+Que JavaScript sea un lenguaje interpretado significa que no tiene que ser compilado, sino que es interpretado directamente por el navegador, que esté basado en eventos significa que es receptivo a las acciones del usuario para desencadenar una serie de eventos de forma interactiva, por ejemplo que muestre un mensaje al darle click a un botón.
 
 ##                                                  PARTE 2
+
 ### 2.1 
 ```js
 let nombre = 'Santiago'
