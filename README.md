@@ -127,7 +127,3 @@ for (let i = 0; i < 10000; i++) {
     num *= i
 }
 console.timeEnd('Bucle_time')
-
-                                                  PARTE 8
-
-8.1 
