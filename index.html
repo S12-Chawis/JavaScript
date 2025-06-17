@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cascade Layers Test</title>
+
+  <style>
+    /* 1. @layer: defaults (menor prioridad) */
+    @layer defaults {
+      .demo {
+        color: green; /* baja especificidad, menor capa */
+      }
+    }
+
+    /* 2. @layer: utilities (mayor prioridad) */
+    @layer utilities {
+      .demo {
+        color: blue; /* misma especificidad, pero gana por estar en capa superior */
+      }
+    }
+
+    /* 3. inline style */
+    /* No aplica aún, lo aplicaremos más abajo en HTML */
+
+    /* 4. fuera de cualquier capa (un-layered) */
+    .demo {
+      color: orange; /* fuera de capa, pierde contra @layer si las capas están ordenadas correctamente */
+    }
+
+    /* 5. !important desde una capa inferior */
+    @layer defaults {
+      .demo {
+        color: pink !important; /* tiene !important pero está en capa débil */
+      }
+    }
+
+    /* 6. una regla con más especificidad pero sin capa */
+    div.demo {
+      color: brown;
+    }
+
+    /* 7. Regla más fuerte: alta especificidad + !important */
+    #strong.demo {
+      color: rebeccapurple !important;
+    }
+
+    /* Orden de capas explícita: prioridad de arriba hacia abajo */
+    @layer utilities, defaults;
+
+  </style>
+</head>
+<body>
+
+  <div class="demo" id="strong" style="color: red;">
+    Prueba de Cascada CSS
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
